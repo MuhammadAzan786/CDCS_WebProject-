@@ -1,9 +1,9 @@
-import React from 'react'
-import Rectangle4 from '../../assets/Images/Rectangle4.png'
-import St1 from '../../assets/Images/ct1.png'
-import St2 from '../../assets/Images/ct2.png'
-import St3 from '../../assets/Images/ct3.png'
-import St4 from '../../assets/Images/ct4.png'
+import React from "react";
+import Rectangle4 from "../../assets/Images/Rectangle4.png";
+import St1 from "../../assets/Images/ct1.png";
+import St2 from "../../assets/Images/ct2.png";
+import St3 from "../../assets/Images/ct3.png";
+import St4 from "../../assets/Images/ct4.png";
 const Section3 = () => {
   return (
     <section>
@@ -34,80 +34,58 @@ const Section3 = () => {
             <div className="p-2  flex flex-col md:flex-row md:gap-20 md:items-start items-center  justify-center  md:mb-20 xl:gap-28">
               {/* images */}
               <div className="grid grid-cols-2 md:grid-cols-1 max-lg:md:w-[279.5px] max-xl:lg:w-[347.672px] flex-col items-center justify-center   md:flex-col relative  max-md:gap-3  md:mt-16 lg:mt-20 gap-[51px] xl:mt-28 lg:ml-5 xl:gap-[60px] lg:gap-[50px] md:gap-10">
-                <div className="max-w-[439.052px] max-h-[367.6px]  rounded-[21px_21px_11px_11px] bg-[rgba(217,217,217,0.39)]   md:w-[100%] md:h-[100%] " data-aos="fade-right">
-                  <img src={St1} alt="" className=' shadow-2xl rounded-3xl' />
+                <div
+                  className="max-w-[439.052px] max-h-[367.6px]  rounded-[21px_21px_11px_11px] bg-[rgba(217,217,217,0.39)]   md:w-[100%] md:h-[100%] "
+                  // data-aos="fade-right"
+                >
+                  <img src={St1} alt="" className=" shadow-2xl rounded-3xl" />
                 </div>
-                <div className="max-w-[439.052px] max-h-[367.6px]  rounded-[21px_21px_11px_11px] bg-[rgba(217,217,217,0.39)]   md:w-[100%]" data-aos="fade-right">
-
-                  <img src={St2} alt="" className='   md:left-[8.542vw] md:top-[16.628vw] 2xl:left-[124.03px] 2xl:top-[241.439px] shadow-2xl    md:w-[100%] rounded-3xl' />
-
-                </div>
-                <div className="max-w-[439.052px] max-h-[367.6px]  rounded-[21px_21px_11px_11px] bg-[rgba(217,217,217,0.39)]    md:w-[100%]" data-aos="fade-right">
-
-                  <img src={St3} alt="" className='   md:left-[8.542vw] md:top-[16.628vw] 2xl:left-[124.03px] 2xl:top-[241.439px] shadow-2xl    md:w-[100%] rounded-3xl' />
-                </div>
-                <div className="max-w-[439.052px] max-h-[367.6px]  rounded-[21px_21px_11px_11px] bg-[rgba(217,217,217,0.39)]    md:w-[100%]" data-aos="fade-right">
-
-                  <img src={St4} alt="" className='   md:left-[8.542vw] md:top-[16.628vw] 2xl:left-[124.03px] 2xl:top-[241.439px] shadow-2xl    md:w-[100%] rounded-3xl' />
-                </div>
-                
-
               </div>
 
               <div className="mt-10 md:mt-0  flex flex-col items-center md:items-start gap-3  max-md:mb-10">
-                <h1 className="text-[#03A651] font-poppins text-[20px] font-semibold leading-normal text-center md:text-start" data-aos="fade-left">
-                  WELCOME TO OUR SITE!
+                <h1
+                  className="text-[#03A651] font-poppins text-[20px] font-semibold leading-normal text-center md:text-start"
+                  data-aos="fade-left"
+                >
+                  Get In Touch !
                 </h1>
-                <p className="max-w-[497px] text-[#333] font-Poppins text-lg lg:text-[32px] text-center font-semibold leading-normal md:text-start" data-aos="fade-left">
+                <p
+                  className="max-w-[497px] text-[#333] font-Poppins text-lg lg:text-[32px] text-center font-semibold leading-normal md:text-start"
+                  data-aos="fade-left"
+                >
                   Contact Us
                 </p>
 
-                <ul className="   text-[#210F03] font-Poppins lg:text-[18px]  lg:leading-[30px] xl:leading-[37px] font-light  md:text-start list-disc flex flex-col gap-10  max-md:ml-7 text-sm  sm:text-base  md:leading-[30px] md:gap-[5vw]  lg:gap-[4vw] xl:gap-[170px] md:mt-5  max-w-[647px] max-lg:md:w-[376.5px] max-xl:lg:w-[559.406px]">
-                <li className='md:mt-10 xl:mt-0' data-aos="fade-left">
-                    <span className="font-semibold">We are easy to reach </span>
+                <ul className="text-[#210F03] font-Poppins lg:text-[18px] lg:leading-[30px] xl:leading-[37px] font-light md:text-start list-disc flex flex-col  max-md:ml-7 text-sm sm:text-base md:leading-[30px]  md:mt-5 max-w-[647px] max-lg:md:w-[376.5px] max-xl:lg:w-[559.406px]">
+                  <li className="md:mt-10 xl:mt-0">
+                    <span className="font-semibold">Phone:</span>
                     <br />
-                    If you didn't find your answers, while exploring the site, you can contact us directly through email, phone, or in person.
-                    CDCS is committed to serving you the way you want, If you want to approach us please follow the instructions,</li>
-                  <li data-aos="fade-left">
-                    <span className="font-semibold">   By Mail, To avoid delays : </span>
+                    +92 51 8899014 / +92 300 034 5000 / +92 345 856 8888
+                  </li>
+                  <li className="md:mt-10 xl:mt-0">
+                    <span className="font-semibold">Email:</span>
                     <br />
-
-
-                    Corporate Debt Collection Services<br />
-                    Durani House, Near Assad Child Clinic<br />
-                    Main Nadir Street Closing End-Adjourning Sarwar Street,<br />
-                    Adyala Road, New Lalazar, Rawalpindi ï¿½ Cantt
-                    Pakistan</li>
-                  <li data-aos="fade-left">
-                    <span className="font-semibold">   By Email : </span>
+                    info@cdcs.com.pk / ceo@cdcs.com.pk
+                  </li>
+                  <li className="md:mt-10 xl:mt-0">
+                    <span className="font-semibold">Address:</span>
                     <br />
-
-                    Representatives in our e-mail center are ready to help you. <br />
-                    For general inquiries please send email to info@cdcs.com.pk. <br />
-                    For feedback please send an email to feedback@cdcs.com.pk. <br />
-                    For information related to your case please write to operations@cdcs.com.pk <br />
-                    For direct approach to CEO office please write to ceo@cdcs.com.pk</li>
-                  <li data-aos="fade-left">
-                    <span className="font-semibold">  By Fixed Phones : </span>
+                    H-1, Athar Street Main Defence Road, New Lalazaar,
+                    Rawalpindi-Pakistan
+                  </li>
+                  <li className="md:mt-10 xl:mt-0">
+                    <span className="font-semibold">Business Hours:</span>
                     <br />
-                    Where dedicated call center representatives are available to serve you.
-                    You may call to, +92 51 5157389 or 8442014</li>
-                  <li data-aos="fade-left">
-                    <span className="font-semibold"> By Mobile Phone : </span>
-                    <br />
-
-
-                    If you want to contact us on our mobile, you can dial 0333-516 3892 & 0345 856 8888 within Pakistan and +92-333-516 3892 & +92 345 856 8888 from outside Pakistan.</li>
-                  
-                 
+                    9:00 A.M to 6:00 P.M
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </div >
-    </section >
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Section3
+export default Section3;

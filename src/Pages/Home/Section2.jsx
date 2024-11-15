@@ -1,28 +1,40 @@
 import React, { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Section2 = () => {
-
   return (
     <section>
       <div className="bg-black h-[1300px] md:h-[880px] lg:h-[780px] overflow-x-hidden overflow-y-hidden">
         <div className="max-w-[1440px] mx-auto overflow-x-hidden overflow-y-hidden lg:px-10  xl:px-12 ">
-          <div className="flex flex-col items-center gap-10 lg:gap-20 md:gap-16 absolute px-5 top-[49rem] xs:top-[55rem] md:top-[36rem] lg:top-[46rem] overflow-x-hidden overflow-y-hidden">
+          <div className="flex flex-col items-center gap-10 lg:gap-10 md:gap-10 absolute px-5 top-[49rem] xs:top-[55rem] md:top-[36rem] lg:top-[46rem] overflow-x-hidden overflow-y-hidden">
             <div className="max-w-[923px]">
-              <h1 className="text-white text-center text-xl font-poppins lg:text-[75px] font-semibold lg:leading-[91px] md:text-3xl  capitalize md:px-40 lg:px-0" data-aos="fade-up">
-                Protecting Your Digital Assets
-                <span className="text-[#03A651]"> Expertly</span>
+              <h1
+                className="text-white text-center text-xl font-poppins lg:text-[50px] font-semibold lg:leading-[60px] md:leading-[40px] md:text-[35px]  capitalize md:px-40 lg:px-0"
+                data-aos="fade-up"
+              >
+                Reliable Partner in Collecting Debts
+                <br />
+                <span className="text-[#03A651]">
+                  Bringing Your Finances Back
+                </span>
               </h1>
             </div>
             <div className="max-w-[849px]">
-              <p className=" text-white text-center font-poppins lg:text-[24px] font-normal lg:leading-[35px] capitalize md:px-20" data-aos="fade-left">
-                CDCS shall also offer a variety of pre-collection services like Credit Application Assistance Programme (CAAP), consumer credit profiles.
+              <p
+                className=" text-white text-center font-poppins lg:text-[24px] font-normal lg:leading-[35px] capitalize md:px-20"
+                data-aos="fade-left"
+              >
+                Our primary emphasis lies in the collection of commercial
+                accounts receivable and the management of delinquent debts, in
+                addition to offering pre-collection outsourcing services and
+                various other recovery solutions.
               </p>
             </div>
             <div className="mt-10 flex flex-col items-center justify-center gap-28 lg:gap-5 lg:grid-cols-3 md:grid  md:grid-cols-2 md:gap-10 xl:gap-8">
               <div
                 className="w-[270px] max-lg:xs:w-[320px] h-[242px] max-w-[382px] xl:w-[28.281vw] lg:w-[26.367vw] rounded-[16px] border-[3px] border-[#03A651] bg-white flex flex-col items-center justify-center relative
-                             xs:px-4" data-aos="fade-left"
+                             xs:px-4"
+                data-aos="fade-left"
               >
                 <div className="w-[80px] h-[80px]  rounded-full bg-gradient-to-r from-[#03A651] to-[#0D502D] [background-position:299deg] flex items-center justify-center absolute top-[-50px]">
                   <svg
@@ -48,15 +60,17 @@ const Section2 = () => {
                 </div>
 
                 <p className="text-[#03A651] text-center font-titillium text-[24px] xs:text-[28px] font-semibold leading-[32px] mt-10">
-                  Recovery employment schemes
+                  Debt Collection
                 </p>
-                <p className="text-black text-center font-poppins text-[16px] font-normal leading-[30px] [font-feature-settings:'liga'_off,'clig'_off] mt-6">
-                  We Recover. You Prosper
+                <p className="text-black text-center font-poppins text-[16px] font-normal leading-[25px] [font-feature-settings:'liga'_off,'clig'_off] mt-6">
+                  Corporate Debt Collection Services (CDCS) is a leading agency
+                  in debt recovery.
                 </p>
               </div>
               <div
                 className="w-[270px] max-lg:xs:w-[320px] h-[242px] lg:w-[26.367vw] max-w-[382px] xl:w-[28.281vw] rounded-[16px] border-[3px]  bg-white flex flex-col items-center justify-center relative
-                             xs:px-4" data-aos="fade-right"
+                             xs:px-4"
+                data-aos="fade-right"
               >
                 <div className="w-[80px] h-[80px]  rounded-full bg-[#03A651] [background-position:299deg] flex items-center justify-center absolute top-[-50px]">
                   <svg
@@ -102,15 +116,17 @@ const Section2 = () => {
                 </div>
 
                 <p className="text-[#03A651] text-center font-titillium text-[24px] xs:text-[28px] font-semibold leading-[32px] mt-10">
-                  Intrusion Detection and Prevention
+                  Skip Tracing
                 </p>
-                <p className="text-black text-center font-poppins text-[16px] font-normal leading-[30px] [font-feature-settings:'liga'_off,'clig'_off] mt-6">
-                  Debt Collection Expertise, Results You Can Count On
+                <p className="text-black text-center font-poppins text-[16px] font-normal leading-[25px] [font-feature-settings:'liga'_off,'clig'_off] mt-6">
+                  We can help locate 'gone away' cases and reduce written-off
+                  accounts.
                 </p>
               </div>
               <div
                 className="w-[270px] max-lg:xs:w-[320px] h-[242px] lg:w-[26.367vw] max-w-[382px] xl:w-[28.281vw] rounded-[16px] border-[3px]  bg-white md:mt-10 lg:mt-0 flex flex-col items-center justify-center relative
-                             xs:px-4" data-aos="fade-right"
+                             xs:px-4"
+                data-aos="fade-right"
               >
                 <div className="w-[80px] h-[80px]  rounded-full  bg-[#03A651] [background-position:299deg] flex items-center justify-center absolute top-[-50px]">
                   <svg
@@ -135,10 +151,10 @@ const Section2 = () => {
                 </div>
 
                 <p className="text-[#03A651] text-center font-titillium text-[24px] xs:text-[28px] font-semibold leading-[32px] mt-10">
-                  Incident Response and Recovery
+                  Asset Tracing
                 </p>
-                <p className="text-black text-center font-poppins text-[16px] font-normal leading-[30px] [font-feature-settings:'liga'_off,'clig'_off] mt-6">
-                  Unlock the Value of Your Unpaid Invoices with CDCS
+                <p className="text-black text-center font-poppins text-[16px] font-normal leading-[25px] [font-feature-settings:'liga'_off,'clig'_off] mt-6">
+                Debt recovery in Pakistan involves legal procedures, financial analysis, and negotiation to secure debtor assets.
                 </p>
               </div>
             </div>

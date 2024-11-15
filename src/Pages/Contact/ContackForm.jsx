@@ -29,7 +29,7 @@ function ContactForm() {
     }
   };
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 500 });
 });
   return (
     <div className="flex-grow flex items-center justify-center mb-9 ml-2 mr-2 mt-10 font-Poppins" 
@@ -56,7 +56,13 @@ function ContactForm() {
           placeholder="Email"
           className="h-12 w-full p-4 mb-4 md:mb-8 rounded border border-gray-300"
         />
-        
+         <input
+          name="Phone"
+          value={formData.Phone}
+          onChange={handleChange}
+          placeholder="Phone"
+          className="h-12 w-full p-4 mb-4 md:mb-8 rounded border border-gray-300"
+        />
         <textarea
           name="message"
           value={formData.message}
