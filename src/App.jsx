@@ -13,22 +13,23 @@ import OutsourcingPage from "./Pages/OutSourcing/OutsourcingPage";
 import AboutPage from "./Pages/About/AboutPage";
 import ContactPage from "./Pages/Contact/ContactPage";
 import BreadCrumbs from "./Components/BreadCrumbs";
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import SideBarNav from "./Components/SideBarNav";
 import FAQsPage from "./Pages/FAQS/FAQsPage";
+import PrivacyPolicy from "./Pages/privacyPolicy/PrivacyPolicy";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
       <Navbar />
-     
+
       <Routes>
-        
         <Route path="/" element={<HomePage />} />
-   
+
         <Route path="/mission" element={<MissionPage />} />
         <Route path="/services" element={<ServicePage />} />
         <Route path="/our-strategy" element={<StrategyPage />} />
@@ -36,8 +37,9 @@ function App() {
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/contactus" element={<ContactPage />} />
         <Route path="/faqs" element={<FAQsPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   );
 }
