@@ -1,62 +1,112 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from "@emailjs/browser"; 
+import React from 'react';
+import { Notification, useToaster } from 'rsuite';
+import 'rsuite/dist/rsuite.min.css';
+
 function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "",
+    Phone: "", 
     message: "",
   });
 
+  const toaster = useToaster();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const { name, email, subject, message } = formData;
+    const { name, email, Phone, message } = formData;
 
-    
-    if (name && email && subject && message) {
-      alert("Your message has been sent.");
+    if (name && email && message) {
+      emailjs
+        .send(
+          "service_nq106ck", // Service ID
+          "template_ob51v5g", // Template ID
+          {
+            fullName: name,
+            email: email, 
+            phoneNumber: Phone, 
+            message: message, 
+          },
+          "kh3AaVAzox66vHlIN" // Public key
+        )
+        .then(() => {
+          toaster.push(
+            <Notification type="success" header="Success" closable>
+              Your message has been sent successfully!
+            </Notification>,
+            { placement: 'topEnd' }
+          );
+          setFormData({
+            name: "",
+            email: "",
+            Phone: "",
+            message: "",
+          });
+        })
+        .catch(() => {
+          toaster.push(
+            <Notification type="error" header="Error" closable>
+              Failed to send your message. Please try again.
+            </Notification>,
+            { placement: 'topEnd' }
+          );
+        });
     } else {
-      alert("Please fill in all the fields.");
+      toaster.push(
+        <Notification type="warning" header="Warning" closable>
+          Please fill in all required fields.
+        </Notification>,
+        { placement: 'topEnd' }
+      );
     }
   };
+
   useEffect(() => {
     AOS.init({ duration: 500 });
-});
+  });
+
   return (
-    <div className="flex-grow flex items-center justify-center mb-9 ml-2 mr-2 mt-10 font-Poppins" 
-    data-aos="fade-up"
+    <div
+      className="flex-grow flex items-center justify-center mb-9 ml-2 mr-2 mt-10 font-Poppins"
+      data-aos="fade-up"
     >
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center  sm:p-9 p-6 md:p-10 bg-[#000000] bg-opacity-90 shadow-2xl rounded-lg w-full max-w-lg "
+        className="flex flex-col items-center sm:p-9 p-6 md:p-10 bg-[#000000] bg-opacity-90 shadow-2xl rounded-lg w-full max-w-lg "
       >
         <h1 className="font-bold text-xl md:text-2xl text-center mb-5 text-white ">
-    Quick  Contact 
+          Quick Contact
         </h1>
         <input
+          type="text"
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="Name"
-          className="h-12  w-full p-4 mb-4 md:mb-8 rounded border border-gray-300"
+          placeholder="Full Name"
+          className="h-12 w-full p-4 mb-4 md:mb-8 rounded border border-gray-300"
         />
         <input
+          type="email"
           name="email"
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
           className="h-12 w-full p-4 mb-4 md:mb-8 rounded border border-gray-300"
         />
-         <input
+        <input
+          type="text"
           name="Phone"
           value={formData.Phone}
           onChange={handleChange}
