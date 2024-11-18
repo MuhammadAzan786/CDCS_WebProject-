@@ -24,7 +24,7 @@ const Footer = () => {
             fillOpacity="0.27"
           />
         </svg>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4  gap-16 lg:gap-0 p-16 lg:px-10 py-20 lg:pt-32  absolute top-0 font-Poppins xl:px-28  w-full  ">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4  gap-16 lg:gap-2 p-16 lg:px-10 py-20 lg:pt-32  absolute top-0 font-Poppins xl:px-28  w-full justify-center ">
           <div
             className="flex flex-col   gap-10 max-w-[250px]"
             data-aos="fade-up"
@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
           {/* ==================Quick Links ================== */}
-          <div className="flex flex-col  gap-10 lg:ml-10" data-aos="fade-up">
+          <div className="flex flex-col lg:ml-5 gap-10" data-aos="fade-up">
             <h2 className="text-xl text-[#03A651] font-TitilliumWeb">
               Quick Links
             </h2>
@@ -66,7 +66,7 @@ const Footer = () => {
           </div>
 
           {/* ==================Our Policies ================== */}
-          <div className="flex flex-col  gap-10" data-aos="fade-up">
+          <div className="flex flex-col lg:ml-5 gap-10" data-aos="fade-up">
             <h2 className="text-xl text-[#03A651] font-TitilliumWeb">
               Guidelines & Policies
             </h2>
@@ -86,7 +86,10 @@ const Footer = () => {
             </div>
           </div>
           {/* ==================Contact Us================== */}
-          <div className="flex flex-col  gap-10 " data-aos="fade-up">
+          <div
+            className="flex flex-col lg:ml-[-60px] gap-10 xl:ml-[-90px]"
+            data-aos="fade-up"
+          >
             <h2 className="text-xl text-[#03A651] font-TitilliumWeb">
               Contact Us
             </h2>
