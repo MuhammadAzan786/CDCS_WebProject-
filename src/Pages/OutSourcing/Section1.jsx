@@ -16,7 +16,7 @@ const Section1 = () => {
              sm:flex-row  gap-5 lg:gap-60   items-center sm:items-start xl:gap-56   max-lg:px-5 ">
             <div className="text-white px-2   flex flex-col  max-w-[734px] xs:mt-[8vw] sm:mt-[15vw] md:mt-[15vw]  xl:mt-[166.4px]">
               <BreadCrumbs/>
-              <h1 className=" font-Poppins text-lg capitalize  md:leading-[138%]  md:text-3xl md:pr-20 lg:text-3xl xl:text-5xl  font-semibold ">Our
+              <h1 className=" font-Poppins text-lg capitalize  md:leading-[138%]  md:text-3xl md:pr-20 lg:text-3xl xl:text-5xl  font-semibold ">
                 <span className="text-[#03A651]"> Outsourcing</span>
               </h1>
             </div>

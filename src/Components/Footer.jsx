@@ -38,7 +38,7 @@ const Footer = () => {
                 helping businesses recover outstanding debts with precision and
                 efficiency.
               </p>
-              <div className="flex gap-4 mt-4">
+              {/* <div className="flex gap-4 mt-4">
                 <button className="apps-icon text-white bg-transparent border border-white p-3 rounded-md text-xl transition duration-700 transform  ease-in-out hover:text-red-700 hover:bg-white">
                   <FontAwesomeIcon icon={faInstagram} />
                 </button>
@@ -51,7 +51,7 @@ const Footer = () => {
                 <button className="apps-icon text-white bg-transparent border border-white p-3 rounded-md text-xl transition duration-700 transform  ease-in-out hover:text-red-500 hover:bg-white">
                   <FontAwesomeIcon icon={faYoutube} />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex flex-col lg:ml-5 gap-10" data-aos="fade-up">

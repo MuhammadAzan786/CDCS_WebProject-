@@ -31,13 +31,6 @@ const Section4 = () => {
               recovery.
             </p>
 
-            <button
-              className="max-w-[174.545px] w-[150px] h-[60px] xl:w-[174.545px] rounded-[16.364px] bg-gradient-to-l from-[#03A651] to-[#144F30] text-white font-semibold xl:text-3xl"
-              data-aos="fade-up"
-            >
-              APPLY
-            </button>
-
             <div className="flex flex-col gap-20 md:flex-row md:gap-5 mt-20 lg:gap-9">
               <div
                 className="w-[250px] max-lg:xs:w-[300px] h-[242px] max-w-[338px] xl:w-[28.281vw] lg:w-[26.367vw] rounded-[16px] border-[3px] border-[#03A651] bg-white flex flex-col items-center justify-center relative
@@ -126,7 +119,8 @@ const Section4 = () => {
                   Skip Tracing & Asset Tracing
                 </p>
                 <p className="text-black text-center font-poppins text-[16px] font-normal leading-[30px] [font-feature-settings:'liga'_off,'clig'_off] mt-6">
-                We use advanced skip and asset tracing to locate debtors and secure their assets.
+                  We use advanced skip and asset tracing to locate debtors and
+                  secure their assets.
                 </p>
               </div>
             </div>

@@ -5,8 +5,13 @@ import { Link } from "react-router-dom";
 import CallIcon from "@mui/icons-material/Call";
 import { Button } from "@mui/material";
 import { styled } from "@mui/system";
-
+import { useNavigate } from "react-router-dom";
 const Section1 = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/contactus"); // Navigate to /contactus
+    window.scrollTo(0, 0); // Scroll to top of the page
+  };
   const ShakingButton = styled(Button)({
     "&:hover .icon": {
       animation: "shake 0.5s ease-in-out infinite",
@@ -62,7 +67,7 @@ const Section1 = () => {
                     "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,62,37,1) 0%, rgba(3,166,81,1) 100%)",
                   width: { xs: "200px", sm: "250px" },
                   transition: "background-position 0.5s ease",
-                  py: {xs: 1, sm: 1,md:2 },
+                  py: { xs: 1, sm: 1, md: 2 },
                   fontSize: "1rem",
 
                   backgroundSize: "200% 100%",
@@ -71,6 +76,7 @@ const Section1 = () => {
                     backgroundPosition: "100% 0%", // Move the gradient to the right on hover
                   },
                 }}
+                onClick={handleNavigate}
               >
                 <CallIcon
                   className="icon"

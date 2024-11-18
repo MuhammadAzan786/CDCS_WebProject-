@@ -441,8 +441,8 @@ const Section3 = () => {
                         padding: 3,
                         mx: 2,
                         textAlign: "center",
-                        boxShadow: 3,
-                        borderRadius: 4,
+                        boxShadow: 2,
+                        borderRadius: "5PX",
                         transition: "all 0.3s ease",
                         "&:hover": {
                           boxShadow: 6,
