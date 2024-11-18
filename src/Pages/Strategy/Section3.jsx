@@ -433,7 +433,7 @@ const Section3 = () => {
                     >
                       We believe in leveraging technology to enhance operational
                       efficiency, reduce costs, and drive better results. For
-                      [Bank Name], we will implement the following technological
+                      Banks, we will implement the following technological
                       innovations:
                     </div>
 
@@ -519,7 +519,7 @@ const Section3 = () => {
                         <br />
                         Provide you with real-time dashboards and performance
                         analytics, ensuring full visibility into the recovery
-                        process. This will allow [Bank Name] to monitor KPIs
+                        process. This will allow Banks to monitor KPIs
                         like recovery rate, customer satisfaction, and
                         cost-to-recovery ratios.
                       </li>
@@ -562,7 +562,7 @@ const Section3 = () => {
                     >
                       CDCS is committed to maintaining the highest standards of
                       compliance and ethical practices in the debt collection
-                      process. For [Bank Name], we will:
+                      process. For Banks, we will:
                     </div>
 
                     <ul
@@ -610,7 +610,7 @@ const Section3 = () => {
                         Train our agents to use tactful and respectful
                         communication strategies, ensuring that debtors are
                         treated professionally. This will help preserve the
-                        relationship between [Bank Name] and its customers,
+                        relationship between Banks and its customers,
                         avoiding reputational risks.
                       </li>
                       <li
@@ -669,7 +669,7 @@ const Section3 = () => {
                         marginBottom: "0.8rem",
                       }}
                     >
-                      Our partnership with [Bank Name] will be based on
+                      Our partnership with Banks will be based on
                       continuous improvement and data-driven decision-making.
                       Key metrics to monitor include:
                     </div>
@@ -922,7 +922,7 @@ const Section3 = () => {
                         marginBottom: "0.8rem",
                       }}
                     >
-                      Our goal is to become an extension of [Bank Name]'s credit
+                      Our goal is to become an extension of Bank's credit
                       risk management and collections team, ensuring sustainable
                       results through the following initiatives:
                     </div>
@@ -949,7 +949,7 @@ const Section3 = () => {
                           • Strategic Risk Mitigation:
                         </strong>
                         <br />
-                        Work with [Bank Name] to reduce future delinquencies
+                        Work with Banks to reduce future delinquencies
                         through a mix of preemptive strategies (e.g., credit
                         risk scoring, borrower education) and ongoing
                         collaboration on emerging industry trends.

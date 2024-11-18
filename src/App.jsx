@@ -1,9 +1,5 @@
 import "./App.css";
-import 'aos/dist/aos.css'
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import AOS from 'aos';
 import AboutPage from "./Pages/About/AboutPage";
 import BreadCrumbs from "./Components/BreadCrumbs";
 import ContactPage from "./Pages/Contact/ContactPage";
@@ -14,18 +10,13 @@ import MissionPage from "./Pages/Mission/MissionPage";
 import Navbar from "./Components/Navbar";
 import OutsourcingPage from "./Pages/OutSourcing/OutsourcingPage";
 import ServicePage from "./Pages/Services/ServicePage";
-import SideBarNav from "./Components/SideBarNav";
 import StrategyPage from "./Pages/Strategy/StrategyPage";
-import OutsourcingPage from "./Pages/OutSourcing/OutsourcingPage";
-import AboutPage from "./Pages/About/AboutPage";
-import ContactPage from "./Pages/Contact/ContactPage";
-import BreadCrumbs from "./Components/BreadCrumbs";
-import TermConditions from './Pages/TermsConditions/TermConditionPgae'
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'
+import TermConditions from "./Pages/TermsConditions/TermConditionPgae";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import PrivacyPolicy from "./Pages/privacyPolicy/PrivacyPolicy";
 import SideBarNav from "./Components/SideBarNav";
-import FAQsPage from "./Pages/FAQS/FAQsPage";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -42,7 +33,7 @@ function App() {
         <Route path="/outsourcing" element={<OutsourcingPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/contactus" element={<ContactPage />} />
-        <Route path="/term-conditions" element={<TermConditions/>}/>
+        <Route path="/term-conditions" element={<TermConditions />} />
         <Route path="/faqs" element={<FAQsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>

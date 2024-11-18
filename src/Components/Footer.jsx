@@ -52,12 +52,19 @@ const Footer = () => {
               <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
                 Services
               </Link>
-              <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-                Industries We Serve
-              </Link>
-              <Link to="/" onClick={() => window.scrollTo(0, 0)}>
+              <a
+                href="#industries"
+                style={{ textDecoration: "none"}}
+              >
+                 Industries We Serve
+              </a>
+              
+              <a
+                href="#how-it-works"
+                style={{ textDecoration: "none"}}
+              >
                 How It Works
-              </Link>
+              </a>
 
               <Link to="/contactus" onClick={() => window.scrollTo(0, 0)}>
                 Contact Us
@@ -77,10 +84,7 @@ const Footer = () => {
               <Link to="/privacy-policy" onClick={() => window.scrollTo(0, 0)}>
                 Privacy Policy
               </Link>
-              <Link
-                to="/terms-conditions"
-                onClick={() => window.scrollTo(0, 0)}
-              >
+              <Link to="/term-conditions" onClick={() => window.scrollTo(0, 0)}>
                 Terms & Conditions
               </Link>
             </div>

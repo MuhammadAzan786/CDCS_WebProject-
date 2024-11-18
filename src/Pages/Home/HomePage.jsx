@@ -18,6 +18,8 @@ import company10 from "../../assets/Images/logo10.jpg";
 import company11 from "../../assets/Images/logo11.jpg";
 import company12 from "../../assets/Images/logo12.jpg";
 import company13 from "../../assets/Images/logo13.jpg";
+import IndustriesWeServe from "../../Components/IndustriesWeServe";
+import HowItWorks from "../../Components/HowItWorks";
 const HomePage = () => {
   const logos = [
     { src: company1, alt: "Company 1" },
@@ -40,7 +42,9 @@ const HomePage = () => {
       <Section1 />
       <Section2 />
       <Section3 />
+      <HowItWorks />
       <Section4 />
+      <IndustriesWeServe />
       <MarqueeSection logos={logos} />
     </div>
   );
