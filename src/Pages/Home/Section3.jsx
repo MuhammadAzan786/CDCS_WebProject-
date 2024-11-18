@@ -100,6 +100,7 @@ const Section3 = () => {
                   globally.
                 </p>
               </div>
+              
             </div>
           </div>
         </div>
