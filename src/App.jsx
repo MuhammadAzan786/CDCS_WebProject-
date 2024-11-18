@@ -1,23 +1,27 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
-import HomePage from "./Pages/Home/HomePage";
-import Navbar from "./Components/Navbar";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Footer from "./Components/Footer";
-import MissionPage from "./Pages/Mission/MissionPage";
-import ServicePage from "./Pages/Services/ServicePage";
-import StrategyPage from "./Pages/Strategy/StrategyPage";
-import OutsourcingPage from "./Pages/OutSourcing/OutsourcingPage";
-import AboutPage from "./Pages/About/AboutPage";
-import ContactPage from "./Pages/Contact/ContactPage";
-import BreadCrumbs from "./Components/BreadCrumbs";
-import { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css'
-import SideBarNav from "./Components/SideBarNav";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import AOS from 'aos';
+import AboutPage from "./Pages/About/AboutPage";
+import BreadCrumbs from "./Components/BreadCrumbs";
+import ContactPage from "./Pages/Contact/ContactPage";
 import FAQsPage from "./Pages/FAQS/FAQsPage";
+import Footer from "./Components/Footer";
+import HomePage from "./Pages/Home/HomePage";
+import MissionPage from "./Pages/Mission/MissionPage";
+import Navbar from "./Components/Navbar";
+import OutsourcingPage from "./Pages/OutSourcing/OutsourcingPage";
+import ServicePage from "./Pages/Services/ServicePage";
+import SideBarNav from "./Components/SideBarNav";
+import StrategyPage from "./Pages/Strategy/StrategyPage";
+import TermConditions from './Pages/TermsConditions/TermConditionPgae'
+import reactLogo from "./assets/react.svg";
+import { useEffect } from 'react';
+import { useState } from "react";
+import viteLogo from "/vite.svg";
+
 function App() {
   const [count, setCount] = useState(0);
 
@@ -35,6 +39,7 @@ function App() {
         <Route path="/outsourcing" element={<OutsourcingPage />} />
         <Route path="/aboutus" element={<AboutPage />} />
         <Route path="/contactus" element={<ContactPage />} />
+        <Route path="/term-conditions" element={<TermConditions/>}/>
         <Route path="/faqs" element={<FAQsPage />} />
       </Routes>
       <Footer/>
