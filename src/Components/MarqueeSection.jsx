@@ -1,7 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { Box, Paper } from "@mui/material";
-import { styled } from "@mui/system";
+import { Grid, styled } from "@mui/system";
 
 // Styled component for the Marquee container
 const MarqueeContainer = styled(Paper)(({ theme }) => ({
@@ -26,7 +26,7 @@ const LogoContainer = styled(Box)(({ theme }) => ({
     objectFit: "contain", // Ensure the logos fit properly
     transition: "transform 0.3s ease",
     "&:hover": {
-      transform: "scale(1.1)", // Scale logo slightly on hover
+      transform: "scale(0.8)", // Scale logo slightly on hover
     },
   },
 }));
@@ -34,20 +34,27 @@ const LogoContainer = styled(Box)(({ theme }) => ({
 // Marquee Component for Logos
 const MarqueeComponent = ({ logos }) => {
   return (
-    <MarqueeContainer elevation={3}>
-      <Marquee
-         gradient={true} // Enable gradient for fading effect
-         gradientWidth={150}
-        pauseOnHover={true} // Pause when hovering over the marquee
-        direction="left" // Scroll direction (left or right)
-      >
-        <LogoContainer>
-          {logos?.map((logo, index) => (
-            <img src={logo.src} alt={logo.alt} key={index} style={{height:"50vh",width:"350px"}} />
-          ))}
-        </LogoContainer>
-      </Marquee>
-    </MarqueeContainer>
+    <Grid container sx={{ height: "60vh" }}>
+      <MarqueeContainer elevation={3}>
+        <Marquee
+          gradient={true} // Enable gradient for fading effect
+          gradientWidth={150}
+          pauseOnHover={true} // Pause when hovering over the marquee
+          direction="left" // Scroll direction (left or right)
+        >
+          <LogoContainer>
+            {logos?.map((logo, index) => (
+              <img
+                src={logo.src}
+                alt={logo.alt}
+                key={index}
+                style={{ height: "50vh", width: "350px" }}
+              />
+            ))}
+          </LogoContainer>
+        </Marquee>
+      </MarqueeContainer>
+    </Grid>
   );
 };
 

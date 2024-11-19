@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logo from "../../src/assets/Images/CDCS-LOGO.png"
 import {
   faCaretDown,
   faBars,
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { Avatar } from "@mui/material";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -52,18 +54,22 @@ const Navbar = () => {
   return (
     <header>
       <div
-        className={`mx-auto p-5 max-md:xs:p-10 md:p-5 md:px-8 lg:px-10 flex items-center justify-between max-lg:gap-[65vw] w-full max-w-screen fixed z-50  xl:px-24 transition-colors duration-300 ${
+        className={`mx-auto p-5   max-md:p-10 md:p-5 md:px-8 lg:px-5 flex items-center justify-between max-lg:gap-[65vw]  max-md:gap-[70vw]  max-sm:gap-[52vw]  w-full max-w-screen fixed z-50  xl:px-12 transition-colors duration-300 ${
           scrolled
             ? "bg-white text-black shadow-xl"
             : "bg-transparent text-white"
         }`}
       >
-        <h1
+        {/* <h1
           className={`font-Anton text-xl text-[#03A651] md:text-4xl max-md:xs:ml-[-12px] cursor-pointer`}
           onClick={toggle}
         >
           <span className={scrolled ? "text-black" : "text-white"}>CD</span>CS
-        </h1>
+        </h1> */}
+        {/* <Avatar src={logo} sx={{height:"50px"}} size="large"/> */}
+        
+        <img src={logo} style={{marginTop:"20px",height:"110px"}} />
+      
         <div className="text-3xl lg:hidden" onClick={() => setOpen(!open)}>
           <FontAwesomeIcon icon={open ? faXmark : faBars} />
         </div>

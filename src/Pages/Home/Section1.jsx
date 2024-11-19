@@ -43,15 +43,19 @@ const Section1 = () => {
         </svg>
 
         <div className="max-w-[1440px] mx-auto  lg:px-10 xl:px-24">
-          <div className="absolute items-center top-32 flex flex-col gap-10 md:flex-row md:top-36 md:gap-0 md:items-center lg:top-40 xl:top-32 max-lg:px-5">
+          <div className="absolute items-center top-32 flex flex-col gap-10 md:flex-row md:top-48 sm:top-48 xs:top-48 md:gap-0 md:items-center lg:top-40 xl:top-32 max-lg:px-5">
             <div className="text-white px-2   flex flex-col gap-5 max-w-[734px]">
-              <h4 className="font-Poppins text-2xl capitalize  md:text-3xl md:pr-20 lg:text-2xl xl:text-5xl font-semibold">
-                Your Trusted Partner in
-                <span className="text-[#03A651]"> Debt Collection </span>
-                and <span className="text-[#03A651]">
-                  Financial Recovery
+              <h4 className="font-Poppins text-2xl capitalize  md:text-3xl md:pr-20 lg:text-2xl xl:text-3xl font-semibold">
+                Your Reliable Ally in Collecting Debts and Finding
+                <span className="text-[#03A651]">
+                  {" "}
+                  Financial Recovery Solutions
                 </span>{" "}
-                Solutions.
+                , Plus an{" "}
+                <span className="text-[#03A651]">
+                  Outstanding Call Center
+                </span>{" "}
+                for Debt Collection
               </h4>
 
               <p className="md:pr-20 lg:text-xl xl:text-lg">
