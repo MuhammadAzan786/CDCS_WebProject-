@@ -17,12 +17,16 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import PrivacyPolicy from "./Pages/privacyPolicy/PrivacyPolicy";
 import SideBarNav from "./Components/SideBarNav";
+import NavBar1 from "./Components/NavBar1";
+import CareerPage from "./Pages/Careers/CareerPage";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <BrowserRouter>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavBar1 />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -36,6 +40,7 @@ function App() {
         <Route path="/term-conditions" element={<TermConditions />} />
         <Route path="/faqs" element={<FAQsPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/careers" element={<CareerPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
