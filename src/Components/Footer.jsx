@@ -5,8 +5,11 @@ import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { Link as MuiLink } from "@mui/material";
+import { Box, Link as MuiLink } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import MailIcon from "@mui/icons-material/Mail";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -223,19 +226,8 @@ const Footer = () => {
               Contact Us
             </h2>
             <div className="flex flex-col  gap-3">
-              <div className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <path
-                    d="M13.6673 3.63989H3.00065C2.26732 3.63989 1.67399 4.23989 1.67399 4.97323L1.66732 12.9732C1.66732 13.7066 2.26732 14.3066 3.00065 14.3066H13.6673C14.4007 14.3066 15.0007 13.7066 15.0007 12.9732V4.97323C15.0007 4.23989 14.4007 3.63989 13.6673 3.63989ZM13.4007 6.47323L8.68732 9.41989C8.47399 9.55323 8.19399 9.55323 7.98065 9.41989L3.26732 6.47323C3.10065 6.36656 3.00065 6.18656 3.00065 5.99323C3.00065 5.54656 3.48732 5.27989 3.86732 5.51323L8.33399 8.30656L12.8007 5.51323C13.1807 5.27989 13.6673 5.54656 13.6673 5.99323C13.6673 6.18656 13.5673 6.36656 13.4007 6.47323Z"
-                    fill="white"
-                  />
-                </svg>
+              <Box className="flex items-center gap-3">
+                <MailIcon />
 
                 <MuiLink
                   href="mailto:info@cdcs.com.pk"
@@ -247,38 +239,16 @@ const Footer = () => {
                 >
                   info@cdcs.com.pk
                 </MuiLink>
-              </div>
-              <div className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="37"
-                  height="37"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <path
-                    d="M8.33399 2.3064C5.75399 2.3064 3.66732 4.39306 3.66732 6.97306C3.66732 9.75306 6.61399 13.5864 7.82732 15.0464C8.09399 15.3664 8.58065 15.3664 8.84732 15.0464C10.054 13.5864 13.0007 9.75306 13.0007 6.97306C13.0007 4.39306 10.914 2.3064 8.33399 2.3064ZM8.33399 8.63973C7.41399 8.63973 6.66732 7.89306 6.66732 6.97306C6.66732 6.05306 7.41399 5.3064 8.33399 5.3064C9.25399 5.3064 10.0007 6.05306 10.0007 6.97306C10.0007 7.89306 9.25399 8.63973 8.33399 8.63973Z"
-                    fill="white"
-                  />
-                </svg>{" "}
+              </Box>
+              <Box className="flex items-center gap-3">
+                <LocationOnIcon />
                 <span style={{ fontSize: "0.8rem" }}>
                   H-1, Athar Street Main Defence Road, New Lalazaar,
                   Rawalpindi-Pakistan
                 </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
-                  viewBox="0 0 17 17"
-                  fill="none"
-                >
-                  <path
-                    d="M13.154 11.1464L11.4607 10.9531C11.054 10.9064 10.654 11.0464 10.3673 11.3331L9.14068 12.5597C7.25401 11.5997 5.70734 10.0597 4.74734 8.1664L5.98068 6.93307C6.26734 6.6464 6.40734 6.2464 6.36068 5.83974L6.16734 4.15974C6.08734 3.4864 5.52068 2.97974 4.84068 2.97974H3.68734C2.93401 2.97974 2.30734 3.6064 2.35401 4.35974C2.70734 10.0531 7.26068 14.5997 12.9473 14.9531C13.7007 14.9997 14.3273 14.3731 14.3273 13.6197V12.4664C14.334 11.7931 13.8273 11.2264 13.154 11.1464Z"
-                    fill="white"
-                  />
-                </svg>
+              </Box>
+              <Box className="flex items-center gap-3">
+                <LocalPhoneIcon />
                 <span>
                   <MuiLink
                     href="tel:+92518899014"
@@ -313,7 +283,7 @@ const Footer = () => {
                     +92 345 856 8888
                   </MuiLink>
                 </span>
-              </div>
+              </Box>
             </div>
           </div>
         </div>
