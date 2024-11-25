@@ -4,9 +4,12 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as MuiLink } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <footer className="bg-[#171717] overflow-x-hidden overflow-y-hidden">
       <div className="relative  text-white w-full h-[1180px] md:h-[650px] lg:h-[450px] xl:h-[485px] mx-auto max-w-[1440px]">
@@ -46,23 +49,92 @@ const Footer = () => {
               Quick Links
             </h2>
             <div className="flex flex-col  gap-3">
-              <Link to="/aboutus" onClick={() => window.scrollTo(0, 0)}>
+              <MuiLink
+                component={RouterLink}
+                to="/aboutus"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 About Us
-              </Link>
-              <Link to="/services" onClick={() => window.scrollTo(0, 0)}>
+              </MuiLink>
+              <MuiLink
+                component={RouterLink}
+                to="/services"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 Services
-              </Link>
-              <a href="#industries" style={{ textDecoration: "none" }}>
+              </MuiLink>
+              <MuiLink
+                component={RouterLink}
+                onClick={(event) => {
+                  event.preventDefault(); // Prevent default link behavior
+                  navigate("/"); // Navigate to the home route or the route where #industries exists
+                  setTimeout(() => {
+                    const element = document.getElementById("industries");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }, 100);
+                }}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 Industries We Serve
-              </a>
-
-              <a href="#how-it-works" style={{ textDecoration: "none" }}>
+              </MuiLink>
+              <MuiLink
+                component={RouterLink}
+                onClick={(event) => {
+                  event.preventDefault(); // Prevent default link behavior
+                  navigate("/"); // Navigate to the home route or the route where #industries exists
+                  setTimeout(() => {
+                    const element = document.getElementById("how-it-works");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }, 100);
+                }}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 How It Works
-              </a>
-
-              <Link to="/contactus" onClick={() => window.scrollTo(0, 0)}>
+              </MuiLink>
+              <MuiLink
+                component={RouterLink}
+                to="/contactus"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 Contact Us
-              </Link>
+              </MuiLink>
             </div>
           </div>
 
@@ -72,21 +144,77 @@ const Footer = () => {
               Guidelines & Policies
             </h2>
             <div className="flex flex-col  gap-3">
-              <Link to="/faqs" onClick={() => window.scrollTo(0, 0)}>
+              <MuiLink
+                component={RouterLink}
+                to="/faqs"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 FAQs
-              </Link>
-              <Link to="/privacy-policy" onClick={() => window.scrollTo(0, 0)}>
+              </MuiLink>
+              <MuiLink
+                component={RouterLink}
+                to="/privacy-policy"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 Privacy Policy
-              </Link>
-              <Link to="/term-conditions" onClick={() => window.scrollTo(0, 0)}>
+              </MuiLink>
+              <MuiLink
+                component={RouterLink}
+                to="/term-conditions"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 Terms & Conditions
-              </Link>
-              <Link to="/careers" onClick={() => window.scrollTo(0, 0)}>
+              </MuiLink>
+              <MuiLink
+                component={RouterLink}
+                to="/careers"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
                 Careers
-              </Link>
-              <Link to="/mission" onClick={() => window.scrollTo(0, 0)}>
-                OUR MISSION
-              </Link>
+              </MuiLink>
+
+              <MuiLink
+                component={RouterLink}
+                to="/mission"
+                onClick={() => window.scrollTo(0, 0)}
+                sx={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  "&:hover,&:active,&:focus": {
+                    color: "#03A651",
+                  },
+                }}
+              >
+                Our Mission
+              </MuiLink>
             </div>
           </div>
           {/* ==================Contact Us================== */}
@@ -109,13 +237,22 @@ const Footer = () => {
                   />
                 </svg>
 
-                <span className="">info@cdcs.com.pk</span>
+                <MuiLink
+                  href="mailto:info@cdcs.com.pk"
+                  sx={{
+                    textDecoration: "none",
+                    color: "inherit",
+                    "&:hover": { color: "#03A651" },
+                  }}
+                >
+                  info@cdcs.com.pk
+                </MuiLink>
               </div>
               <div className="flex items-center gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="17"
+                  width="37"
+                  height="37"
                   viewBox="0 0 17 17"
                   fill="none"
                 >
@@ -124,7 +261,7 @@ const Footer = () => {
                     fill="white"
                   />
                 </svg>{" "}
-                <span className="">
+                <span style={{ fontSize: "0.8rem" }}>
                   H-1, Athar Street Main Defence Road, New Lalazaar,
                   Rawalpindi-Pakistan
                 </span>
@@ -143,37 +280,42 @@ const Footer = () => {
                   />
                 </svg>
                 <span>
-                  +92 51 8899014 <br /> +92 300 034 5000
-                  <br /> +92 345 856 8888
+                  <MuiLink
+                    href="tel:+92518899014"
+                    sx={{
+                      textDecoration: "none",
+                      color: "#fff",
+                      "&:hover": { color: "#03A651" },
+                    }}
+                  >
+                    +92 51 8899014
+                  </MuiLink>
+                  <br />
+                  <MuiLink
+                    href="tel:+923000345000"
+                    sx={{
+                      textDecoration: "none",
+                      color: "inherit",
+                      "&:hover": { color: "#03A651" },
+                    }}
+                  >
+                    +92 300 034 5000
+                  </MuiLink>
+                  <br />
+                  <MuiLink
+                    href="tel:+923458568888"
+                    sx={{
+                      textDecoration: "none",
+                      color: "inherit",
+                      "&:hover": { color: "#03A651" },
+                    }}
+                  >
+                    +92 345 856 8888
+                  </MuiLink>
                 </span>
               </div>
             </div>
           </div>
-
-          {/* <form
-            className="flex flex-col  gap-10 lg:ml-[-40px] xl:ml-[-90px]"
-            data-aos="fade-up"
-          >
-            <h2 className="text-xl text-white font-Signika">Newsletter</h2>
-            <div className="relative flex items-center">
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your email"
-                className=" p-2 py-5 rounded-2xl bg-white text-black w-[270px] sm:w-[432px] "
-                required
-              />
-              <button
-                className="p-3 px-7 rounded-[16px]  text-white absolute left-36 sm:left-72  md:left-40 lg:left-36 xl:left-60 font-TitilliumWeb transition duration-500 transform hover:scale-x-110 ease-in-out"
-                style={{
-                  background:
-                    "linear-gradient(291.57deg, #03A651 6.23%, #144F30 93.77%)",
-                }}
-              >
-                Submit
-              </button>
-            </div>
-          </form> */}
         </div>
       </div>
     </footer>
