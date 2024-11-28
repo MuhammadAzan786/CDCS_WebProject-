@@ -97,13 +97,14 @@ function NavBar1(props) {
             sx={{
               flexGrow: 1,
               display: { xs: "block", sm: "block" },
-              fontSize: {xs:"0.8rem",sm:"0.9rem",md:"1rem"},
+              fontSize: { xs: "1rem", sm: "1.4rem", md: "1.3rem",lg:"1.5rem" },
+              lineHeight:"25px",
               fontWeight: "600",
               color: "#4d4d4d",
               textTransform: "uppercase",
             }}
           >
-            Corporate Depts{" "}
+            Corporate Debt <br />
             <span style={{ color: "#03a651" }}>Collection Services</span>
           </Typography>
           <IconButton
